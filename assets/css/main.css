@@ -7,6 +7,156 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+/* Style de chaque projet */
+.projet {
+	display: flex;
+	margin: 10px;
+	padding: 10px;
+	background-color: #3a3a3a;
+	border-radius: 10px;
+}
+
+/* Style de l'image du projet */
+.image-projet {
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+	border-radius: 10%;
+	margin-right: 20px;
+}
+
+/* Style des informations du projet */
+.informations-projet {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/* Titre du projet */
+.nom-projet {
+	font-family: 'Helvetica Neue', sans-serif; /* Exemple de police personnalisée */
+	font-size: 1.3em;
+	letter-spacing: 1px; /* Réduit l'espacement entre les lettres */
+	color: #FFFFFF; /* Couleur blanche */
+}
+
+/* Description du projet */
+.description-projet {
+	font-size: 16px;
+	color: #ffffff;
+	margin: 10px 0;
+}
+
+.github-btn {
+	background-color: #000;
+	color: #fff;
+	border: none;
+	width: 150px;
+	padding: 10px 20px;
+	font-size: 16px;
+	border-radius: 5px;
+	text-decoration: none;
+	transition: background-color 0.2s ease;
+	align-self: flex-end;
+}
+
+.github-btn:hover {
+	background-color: #333;
+}
+
+/* Media queries pour rendre le code responsive */
+
+@media screen and (max-width: 768px) {
+	.projet {
+		flex-direction: column;
+		width: 45%;
+	}
+	
+	.conteneur-projets {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.image-projet {
+		width: 150px;
+		height: 150px;
+		object-fit: cover;
+		border-radius: 10%;
+		margin: 0 auto 10px;
+	}
+	
+	.nom-projet {
+		font-family: 'Helvetica Neue', sans-serif; /* Exemple de police personnalisée */
+		font-size: 1.3em;
+		letter-spacing: 1px; /* Réduit l'espacement entre les lettres */
+		color: #FFFFFF; /* Couleur blanche */
+		text-align: center;
+	}
+
+	.description-projet {
+		font-size: 16px;
+		color: #ffffff;
+		margin: 10px 0;
+		text-align: center;
+	}
+
+	.informations-projet {
+		align-items: center;
+	}
+	
+	.github-btn {
+		align-self: center;
+	}
+}
+
+@media screen and (max-width: 490px) {
+	.projet {
+		flex-direction: column;
+		width: 100%;
+	}
+	
+	.conteneur-projets {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.image-projet {
+		width: 150px;
+		height: 150px;
+		object-fit: cover;
+		border-radius: 10%;
+		margin: 0 auto 10px;
+	}
+	
+	.nom-projet {
+		font-family: 'Helvetica Neue', sans-serif; /* Exemple de police personnalisée */
+		font-size: 1.3em;
+		letter-spacing: 1px; /* Réduit l'espacement entre les lettres */
+		color: #FFFFFF; /* Couleur blanche */
+		text-align: center;
+	}
+
+	.description-projet {
+		font-size: 16px;
+		color: #ffffff;
+		margin: 10px 0;
+		text-align: center;
+	}
+
+	.informations-projet {
+		align-items: center;
+	}
+	
+	.github-btn {
+		align-self: center;
+	}
+}
+
+
+
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
